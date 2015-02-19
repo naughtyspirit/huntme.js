@@ -1,0 +1,22 @@
+{
+  "name": "huntme-node",
+  "version": "0.0.1",
+  "description": "Smart & Easy short urls for your apps",
+  "main": "src/index.js",
+  "author": "Naughty Spirit <hi@naughtyspirit.co> (http://naughtyspirit.co/)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:naughtyspirit/huntme-node.git"
+  },
+  "scripts": {
+    "start": "node --harmony .",
+    "test": "node_modules/mocha/bin/mocha --harmony -w"
+  },
+  "engines": {
+    "node": "0.12.x"
+  },
+  "dependencies": {
+    "request-promise": "^0.4.0"
+  }
+}
