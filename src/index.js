@@ -3,17 +3,18 @@ var Querystring = require('querystring')
 
 var HuntMe = function(apiKey) {
     this.config = {
-        apiKey: apiKey,
-        createLink: "http://api.hnt.me/links"
+        createLink: "http://api.hnt.me/links?accessToken=" + apiKey
     }
 
     return this
 }
 
 HuntMe.prototype.createLink = function* createLink(link, platform) {
-    payload = [{
-        url: link,
-        platform: platform}]
+    payload = {links: [{
+            url: link,
+            platform: platform
+        }]
+    }
     var options = {
         uri: this.config.createLink,
         method: "POST",
