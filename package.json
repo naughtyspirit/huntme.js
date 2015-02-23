@@ -1,6 +1,6 @@
 {
   "name": "huntme-node",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Smart & Easy short urls for your apps",
   "main": "src/index.js",
   "author": "Naughty Spirit <hi@naughtyspirit.co> (http://naughtyspirit.co/)",
